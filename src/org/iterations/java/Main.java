@@ -29,5 +29,27 @@ public class Main {
         
         //Verifica della lista vuota
         System.out.println(secondaLista.hasAncoraElementi());
+        
+        //Aggiungo elementi nell'Array
+        secondaLista.addElemento(101);
+        secondaLista.addElemento(110);
+        secondaLista.addElemento(89);
+        secondaLista.addElemento(219);
+        
+        //Stampo la seconda lista
+        System.out.println(Arrays.toString(secondaLista.getNumbers()));
+        
+        //Estrazione degli elementi della seconda lista
+        System.out.println(secondaLista.getElementoSuccessivo());
+        System.out.println(secondaLista.getElementoSuccessivo());
+        System.out.println(secondaLista.getElementoSuccessivo());
+        System.out.println(secondaLista.getElementoSuccessivo());
+        
+        //Stampiamo index
+        System.out.println("Index: " + secondaLista.getIndex());
+        
+        //Arrivati qui hasAncoraElementi stamperà false (Non ci sono elementi da mostare)
+        System.out.println(secondaLista.hasAncoraElementi());
+        
 	}
 }
